@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/modal.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body class="font-sans">
+    <nav class="bg-emerald p-5 md:flex md:items-center md:justify-between">
+      <div class="flex justify-between items-center">
+        <span class="text-2xl cursor-pointer">
+          <img src="../images/logo.png" class="h-10 inline" />
+        </span>
+        <span class="text-3xl cursor-pointer md:hidden block"
+          ><ion-icon name="menu" class="menu" onclick="Menu(this)"></ion-icon
+        ></span>
+      </div>
+      <ul
+        class="md:flex md:items-center z-[1] md:z-auto md:static absolute bg-emerald w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+      >
+        <li class="mx-4 my-6 min-[320px]:my-0">
+          <a href="https://tolemcard.kz/" class="text-xl text-white">Новости</a>
+        </li>
+        <li class="mx-4 my-6 min-[320px]:my-0">
+          <a href="https://tolemcard.kz/contact/" class="text-xl text-white"
+            >Контакты</a
+          >
+        </li>
+        <button
+          class="callp bg-white text-emerald font-bold text-xl p-5 rounded-xl"
+        >
+          КОЛЛ-ЦЕНТР
+        </button>
+      </ul>
+    </nav>
+    <main>
+      <div class="max-w-1/1 m-auto min-[320px]:max-w-1/3 m-auto">
+        <div
+          class="title min-[320px]:max-w-1/3 m-auto flex justify-center text-emerald my-5 font-bold text-2xl"
+        >
+          Заполните данные
+        </div>
+        <form
+          action="#"
+          class="bg-emerald flex justify-center min-[320px]: p-5 rounded-lg"
+        >
+          <div class="general">
+            <div class="name min-[320px]:mb-4">
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Имя"
+                class="min-[320px]:w-64 p-2 rounded-lg"
+                required
+              />
+            </div>
+            <div class="surname min-[320px]:mb-4">
+              <input
+                id="surname"
+                name="surname"
+                type="text"
+                placeholder="Фамилия"
+                class="min-[320px]:w-64 p-2 rounded-lg"
+                required
+              />
+            </div>
+            <div class="email min-[320px]:mb-4">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Емайл"
+                class="min-[320px]:w-64 p-2 rounded-lg"
+                required
+              />
+            </div>
+            <div class="iin min-[320px]:mb-4">
+              <input
+                id="number"
+                name="number"
+                type="number"
+                placeholder="ИИН"
+                class="min-[320px]:w-64 p-2 rounded-lg"
+                required
+              />
+            </div>
+            <div
+              class="btn min-[320px]:flex justify-center bg-white py-2 rounded-lg open-popup"
+            >
+              <input
+                type="submit"
+                id="open-modal-btn"
+                value="Отправить"
+                class="text-emerald"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <div class="modal" id="my-modal">
+      <div class="modal__box rounded-lg">
+        <button id="close-my-modal-btn" class="modal__close-btn">
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
+        <div class="title-modal text-emerald" align="center">
+          Срок подготовление карточки займёт 3-4 дней.Дождитесь ответа от
+          менеджерей
+        </div>
+      </div>
+    </div>
+    <script src="../tailwind.config.js"></script>
+    <script src="../js/modal.js"></script>
+    <link rel="stylesheet" href="../css/main.css" />
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+  </body>
+</html>

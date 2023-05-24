@@ -1,0 +1,67 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+  transition: all 1s ease;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.swiper {
+  margin: unset;
+  width: 400px;
+  height: 545px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+}
+
+.swiper-slide:nth-child(1n) {
+  background: url("../images/green.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.swiper-slide:nth-child(2n) {
+  background: url("../images/violet.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.swiper-slide:nth-child(3n) {
+  background: url("../images/red.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.swiper-slide.swiper-slide-active {
+  border: 2px white solid;
+  transition: 1s ease;
+}
+.title-standart {
+  transition: all 1s ease;
+}
+.callp {
+  transition: all 1s ease;
+}
+.er {
+  transition: all 1s ease;
+}
+.standart{
+  transition: all 1s ease;
+}
+
+/* @media (max-width: 500px) {
+  body {
+    font-size: 40px;
+  }
+} */
+
+/* .swiper-slide.swiper-slide-active:has(+ .ko) {
+  background: white;
+} */

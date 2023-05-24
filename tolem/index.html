@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tolem</title>
+  </head>
+  <body class="font-sans bg-emerald">
+    <!-- navbar -->
+    <header class="max-w-1/2 m-auto mt-5 inset-x-0 top-0 py-3 z-10">
+      <div class="flex justify-between items-center">
+        <div class="logo-header flex items-center justify-between">
+         <a href="./index.html"> <img src="./images/logo.png" class="mr-4" width="200px" /></a>
+          <div class="messengers flex items-center justify-between">
+            <a href="https://www.facebook.com/tolemcardkz" target="_blank">
+              <img src="./images/facebook-logo.png" class="logo-size"
+            /></a>
+            <a href="https://www.instagram.com/tolemcard.kz/" target="_blank">
+              <img src="./images/instagram-logo.png" class="logo-size"
+            /></a>
+            <a href="https://t.me/tolemcardkz" target="_blank">
+              <img src="./images/telegram.png" class="logo-size"
+            /></a>
+          </div>
+        </div>
+        <div class="header-text flex items-center">
+          <p class="header__text"><a href="#">Новости</a></p>
+          <p class="header__text"><a href="./pages/contacts.html">Контакты</a></p>
+          <a href="#">
+            <button
+              class="callp bg-white text-emerald font-bold text-xl p-5 rounded-xl"
+            >
+              КОЛЛ-ЦЕНТР
+            </button></a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- navbar -->
+
+    <!-- card -->
+    <main class="my-20">
+      <section class="max-w-min m-auto pt-4 pb-20 rounded-3xl">
+        <div class="wrapper flex justify-between items-center">
+          <div class="text">
+            <div class="mb-5">
+              <div
+                class="text-white p-2 text-xl font-main rounded-xl tracking-widest relative h-11 font-sans"
+              >
+                — ВСЕ ВИДЫ КАРТ ОПЛАТЫ
+              </div>
+              <div
+                class="standart title-standart font-bold text-white p-2 text-7xl font-sans mb-6 relative h-20"
+              >
+                СТАНДАРТ
+              </div>
+              <div
+                class="subtitle font-sans font-light text-white text-xl w-4 relative h-36"
+              >
+                Карта Стандарт. Проезд по стандартному тарифу 70 тенге.Стоимость
+                карты — 500 тенге. Входит один бесплатный проезд.Приобрести
+                данный вид транспортной карты можно у водителяи в магазинах
+                города, где есть специальная вывеска (фото вывески)
+              </div>
+            </div>
+
+            <div class="numeration my-5">
+              <ul class="list-disc flex font-sans text-white text-2xl">
+                <li class="lim">Практично</li>
+                <li class="lim">Экономно</li>
+                <li class="lim">Современно</li>
+              </ul>
+            </div>
+            <div class="btn-tolem flex items-center mt-10">
+           
+                <a
+                  class="er bg-white px-8 py-5 text-emerald font-bold text-3xl rounded-xl tracking-widest font-sans"
+                href="./pages/application.html"
+                  >
+                  ПОДРОБНЕЕ
+            </a>
+             
+            </div>
+          </div>
+          <section id="section" class="pl-14 pr-20 py-8">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide green" id="1"></div>
+                <div class="swiper-slide blue" id="2"></div>
+                <div class="swiper-slide red" id="3"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <main class="max-w-1/2 m-auto mb-20">
+      <div
+        class="news-title text-white font-bold flex justify-center text-7xl mb-20"
+      >
+        ЧТО МЫ ПРЕДЛАГАЕМ?
+      </div>
+      <section class="flex justify-evenly">
+        <div>
+          <div
+            class="card bg-white rounded-lg mb-5 w-65 p-2 h-52"
+            align="center"
+          >
+            <img src="./images/security.png" class="card-logo" />
+            <div class="title-card font-bold text-2xl">Безопасность</div>
+            <div class="subtitle-card text-xl w-96">
+              Мы гарантируем информационную безопасность
+            </div>
+          </div>
+          <div class="card bg-white rounded-lg w-65 p-2 h-54" align="center">
+            <img src="./images/service.png" class="card-logo" />
+            <div class="title-card font-bold text-2xl">Качественный сервис</div>
+            <div class="subtitle-card text-xl w-96">
+              Мы всегда будем обеспечивать своих клиентов качественным
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div
+            class="card bg-white rounded-lg mb-5 w-65 p-2 h-52"
+            align="center"
+          >
+            <img src="./images/card.png" class="card-logo" />
+            <div class="title-card font-bold text-2xl">Комфорт</div>
+            <div class="subtitle-card text-xl w-96">
+              Очень удобные в использовании карты Tolem
+            </div>
+          </div>
+
+          <div class="card bg-white rounded-lg w-65 p-2 h-54" align="center">
+            <img src="./images/techology.png" class="card-logo" />
+            <div class="title-card font-bold text-2xl">
+              Современная технология
+            </div>
+            <div class="subtitle-card text-xl w-96">
+              Наша система - яркий пример государственной программы Digital
+              Kazakhstan
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-footer text-white font-sans py-20">
+      <div class="main-footer max-w-1/2 m-auto flex justify-around">
+        <div class="info-footer" align="left">
+          <div class="title-footer text-3xl font-bold mb-5">О нас</div>
+          <a href="https://tolemcard.kz/URL"> <div class="subtitle-footer">Наша компания</div></a>
+          <a href="https://tolemcard.kz/URL"> <div class="subtitle-footer">Партнерство</div></a>
+          <a href=""> <div class="subtitle-footer">Контакты</div></a>
+          <a href="https://tolemcard.kz/URL"> <div class="subtitle-footer">Документы</div></a>
+          <a href="https://tolemcard.kz/URL"> <div class="subtitle-footer">Наша миссия</div></a>
+          <a href="#"> <div class="subtitle-footer">Публичный договор</div></a>
+        </div>
+        <div class="question-footer" align="left">
+          <div class="title-footer text-3xl font-bold mb-5 w-96">
+            ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+          </div>
+          <a href="#"> <div class="subtitle-footer">Где купить карту?</div></a>
+          <a href="#"> <div class="subtitle-footer">Как пополнить карту?</div></a>
+          <a href="#">
+            <div class="subtitle-footer">Что делать если потеряли карту?</div></a
+          >
+          <a href="#">
+            <div class="subtitle-footer">
+              Что делать если карта не работает?
+            </div></a
+          >
+          <a href="#">
+            <div class="subtitle-footer">Если школьнику исполнился 18 лет?</div></a
+          >
+        </div>
+        <div class="tolem-footer" align="left">
+          <div class="title-footer text-3xl font-bold mb-5">КАРТЫ</div>
+          <div class="subtitle-footer">Карта Стандарт</div>
+          <div class="subtitle-footer">Карта Студенческая</div>
+          <div class="subtitle-footer">Карта школьника</div>
+        </div>
+        <div class="address-footer" align="left">
+          <div class="title-footer text-3xl font-bold mb-5">НАШИ АДРЕСА</div>
+          <div class="subtitle-footer">г. Шымкент. пл Аль-Фараби 9/Жангельдина 1</div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./tailwind.config.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+body{
+  margin: 0px;
+  padding: 0px;
+}
+.header__text {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-right: 36px;
+}
+.header__text:last-child {
+  margin: 0px;
+}
+.header__text:hover {
+  color: rgb(216, 197, 29);
+  transition: 0.8s;
+}
+.logo-size {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+.lim{
+  margin-right: 50px;
+}
+.lim:last-child{
+  margin-right: 0px;
+}
+.lim:first-child{
+  margin-left: 20px;
+}
+.card-logo{
+  width: 150px;
+  height: auto;
+}
+.subtitle-footer{
+  margin-bottom: 10px;
+}
+/* input::placeholder{
+  color: #7BC248;
+} */
+.menu {
+  color: white;
+}
+.close{
+  font-size: 25px;
+}
+input::-ms-value{
+  color: #7BC248;
+}
